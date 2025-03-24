@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="icon" type="image/png" href="360_F_516276029_aMcP4HU81RVrYX8f5qCAOCCuOiCsu5UF.jpg">
 </head>
-<style
+<style>
     @font-face {
     font-family: myfont;
     src: url(GrandSlang-Roman.ttf);
@@ -19,7 +19,7 @@ body{
 
     .line{
         border-left: 1px solid #1A1818;
-       margin-top: 150px;
+       margin-top: 200px;
         margin-left: 25px;  
         height: 150px;
     }
@@ -32,21 +32,21 @@ body{
     right: 0;
     }
 
-    .main a{
-        text-decoration: none;
-        color: #1A1818;
-        font-size: 150.26px;
-        line-height: 1;
-        text-align: left;
-        font-family: myfont;
-        text-transform: uppercase;
-    }
-     
-    .main a:hover{
-        text-decoration: line-through;
-        text-decoration-color: #ece7e1;
-        transform: skewX(-25deg);
-    }
+    .main a {
+    display: inline; /* Keeps hover area strictly around the text */
+    text-decoration: none;
+    color: #1A1818;
+    font-size: 150.26px;
+    line-height: 1;
+    align-items: flex-end;
+    font-family: myfont;
+    text-transform: uppercase;
+}
+
+.main a:hover {
+    text-decoration: line-through;
+    text-decoration-color: #ece7e1;
+}
 
     .social{
      display: flex;
@@ -54,7 +54,7 @@ body{
     position: fixed;
     top: 2.6%;
     left: 0;
-    gap: 30px;
+    gap: 40px;
     margin-left: 25px;
     }
 
